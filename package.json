@@ -1,6 +1,6 @@
 {
   "name": "@hemyn/moon",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "",
   "dependencies": {
     "@hemyn/egg-rpc": "^0.0.3",
