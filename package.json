@@ -1,0 +1,73 @@
+{
+  "name": "@hemyn/moon",
+  "version": "0.0.3",
+  "description": "",
+  "dependencies": {
+    "egg": "^2",
+    "logstash-client": "^1.1.1",
+    "uuid": "^8.3.2",
+    "@hemyn/egg-rpc": "^0.0.1",
+    "@hemyn/egg-rpc-generator": "^0.0.2",
+    "egg-scripts": "^2.6.0",
+    "egg-bin": "^4.11.0"
+  },
+  "devDependencies": {
+    "autod": "^3",
+    "autod-egg": "^1",
+    "egg-bin": "^4",
+    "egg-ci": "^1",
+    "egg-mock": "^4",
+    "eslint": "^7",
+    "eslint-config-egg": "^8.0.0",
+    "standard-version": "^9.3.2",
+    "@types/mocha": "^2.2.40",
+    "@types/node": "^7.0.12",
+    "@types/supertest": "^2.0.0",
+    "colors": "^1.4.0",
+    "tslib": "^1.9.0",
+    "typescript": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "scripts": {
+    "test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint . --resolve-plugins-relative-to .",
+    "ci": "npm run lint && egg-bin pkgfiles --check && npm run cov",
+    "autod": "autod",
+    "pkgfiles": "egg-bin pkgfiles",
+    "release": "standard-version"
+  },
+  "ci": {
+    "version": "12",
+    "type": "github"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "egg",
+    "egg-framework"
+  ],
+  "author": "",
+  "files": [
+    "index.js",
+    "lib",
+    "app",
+    "config",
+    "app.js",
+    "LogstashTransport.js"
+  ],
+  "eslintIgnore": [
+    "coverage",
+    "dist"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
