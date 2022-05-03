@@ -12,5 +12,17 @@ module.exports = (appInfo) => {
     key: appInfo.name + "_123456",
   };
 
+  config.onerror = {
+    errorPageUrl: (err, ctx) => {
+      ctx.logger.info(
+        JSON.stringify({
+          ...ctx.request.headers,
+          err,
+        })
+      );
+      return ctx.errorPageUrl || "/500";
+    },
+  };
+
   return config;
 };
