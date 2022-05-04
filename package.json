@@ -1,6 +1,6 @@
 {
   "name": "@hemyn/moon",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "",
   "dependencies": {
     "@hemyn/egg-rpc": "^0.0.3",
@@ -8,7 +8,9 @@
     "egg": "^2",
     "egg-scripts": "^2.6.0",
     "logstash-client": "^1.1.1",
-    "uuid": "^8.3.2",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
     "@types/mocha": "^2.2.40",
     "@types/node": "^7.0.12",
     "@types/supertest": "^2.0.0",
@@ -20,11 +22,9 @@
     "egg-mock": "^4",
     "eslint": "^7",
     "eslint-config-egg": "^8.0.0",
-    "standard-version": "^9.3.2",
     "tslib": "^1.9.0",
     "typescript": "^3.0.0"
   },
-  "devDependencies": {},
   "engines": {
     "node": ">=12.0.0"
   },
