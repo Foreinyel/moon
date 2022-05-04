@@ -8,3 +8,7 @@
 mkdir moon-app && cd moon-app
 npm init @hemyn/moon
 ```
+
+## example
+
+[moon-cloud-example](https://github.com/Foreinyel/moon-cloud-example)
