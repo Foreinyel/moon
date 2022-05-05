@@ -33,14 +33,16 @@ module.exports = class AppBootHook {
     // });
 
     const logstash = this.app.config.logstash || {};
-    this.app.logger.set(
-      "remote",
-      new LogstashTransport({
-        level: "INFO",
-        host: logstash.host || "127.0.0.1",
-        port: logstash.port || 15044,
-      })
-    );
+    if (logstash.host && logstash.port) {
+      this.app.logger.set(
+        "remote",
+        new LogstashTransport({
+          level: "INFO",
+          host: logstash.host || "127.0.0.1",
+          port: logstash.port || 15044,
+        })
+      );
+    }
   }
 
   async willReady() {
