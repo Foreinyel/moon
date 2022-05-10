@@ -1,10 +1,11 @@
 {
   "name": "@hemyn/moon",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "",
   "dependencies": {
     "@hemyn/egg-rpc": "^0.0.3",
     "@hemyn/egg-rpc-generator": "^0.0.2",
+    "@hemyn/moon-kafka": "^1.0.4",
     "egg": "^2",
     "egg-scripts": "^2.6.0",
     "logstash-client": "^1.1.1",
