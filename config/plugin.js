@@ -1,7 +1,13 @@
 "use strict";
 
-// add you build-in plugin here, example:
+// rpc
 exports.rpc = {
-  enable: true,
-  package: "@hemyn/egg-rpc",
-};
+//   enable: true,
+//   package: "@hemyn/egg-rpc",
+// };
+
+// kafka
+// exports.kafka = {
+//   enable: false,
+//   package: "@hemyn/moon-kafka",
+// };
