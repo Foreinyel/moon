@@ -1,7 +1,7 @@
 "use strict";
 
 // rpc
-exports.rpc = {
+// exports.rpc = {
 //   enable: true,
 //   package: "@hemyn/egg-rpc",
 // };
