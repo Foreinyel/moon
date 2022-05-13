@@ -284,10 +284,10 @@
   dependencies:
     kafka-node "^5.0.0"
 
-"@hemyn/moon-statsd@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@hemyn/moon-statsd/-/moon-statsd-1.0.0.tgz#17890b7912a0fae3772bc5cb3d772eb0a5f83c7e"
-  integrity sha512-ynLzQmQwPS6hIC2eJS5VjrqNHXdYXHQjL1o59GK/KTBvRrDMuBkYMbQb7Q7id6btTX4LhW+R3ygoLPAVzEvd6A==
+"@hemyn/moon-statsd@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@hemyn/moon-statsd/-/moon-statsd-1.0.1.tgz#ddecf7ba64014ae948ff27db1b6b237470c68a59"
+  integrity sha512-W5Iafc9Q9IDDBrXtOKj3YxDWDVK4SL1jgA5+kyZP+QyXsbBNeYRPXtNSoZYExpOAO3wdzqx991noAaOx63IKog==
   dependencies:
     node-statsd "^0.1.1"
     standard-version "^9.3.2"
