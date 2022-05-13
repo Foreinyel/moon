@@ -284,6 +284,14 @@
   dependencies:
     kafka-node "^5.0.0"
 
+"@hemyn/moon-statsd@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@hemyn/moon-statsd/-/moon-statsd-1.0.0.tgz#17890b7912a0fae3772bc5cb3d772eb0a5f83c7e"
+  integrity sha512-ynLzQmQwPS6hIC2eJS5VjrqNHXdYXHQjL1o59GK/KTBvRrDMuBkYMbQb7Q7id6btTX4LhW+R3ygoLPAVzEvd6A==
+  dependencies:
+    node-statsd "^0.1.1"
+    standard-version "^9.3.2"
+
 "@humanwhocodes/config-array@^0.5.0":
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.5.0.tgz#1407967d4c6eecd7388f83acf1eaf4d0c6e58ef9"
@@ -6793,6 +6801,11 @@ node-homedir@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/node-homedir/-/node-homedir-1.1.1.tgz#736db0b60e3bba8aba68df9927de40a7aabe1075"
   integrity sha512-Xsmf94D/DdeDISAECUaxXVxhh+kHdbOQE4CnP4igo3HXL3BSmmUpD5M7orH434EZZwBTFF2xe5SgsQr/wOBuNw==
+
+node-statsd@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/node-statsd/-/node-statsd-0.1.1.tgz#27a59348763d0af7a037ac2a031fef3f051013d3"
+  integrity sha1-J6WTSHY9CvegN6wqAx/vPwUQE9M=
 
 node-zookeeper-client@^1.0.0:
   version "1.1.1"

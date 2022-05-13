@@ -11,3 +11,9 @@
 //   enable: false,
 //   package: "@hemyn/moon-kafka",
 // };
+
+// statsd
+// exports.statsd = {
+//   enable: false,
+//   package: "@hemyn/moon-statsd",
+// };

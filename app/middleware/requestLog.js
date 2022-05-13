@@ -3,12 +3,13 @@
 const uuid = require("uuid");
 const requestLog = () => {
   return async (ctx, next) => {
+    const start = Date.now();
     const traceId = ctx.request.header.traceId || uuid.v4();
     ctx.request.headers = Object.assign(
       Object.assign({}, ctx.request.headers),
       { traceId }
     );
-    ctx.set("traceId", traceId);
+
     ctx.logger.info(
       JSON.stringify({
         traceId,
@@ -19,6 +20,9 @@ const requestLog = () => {
       })
     );
     await next();
+    ctx.set("traceId", traceId);
+    const cost = Date.now() - start;
+    ctx.set("X-Response-Time", cost);
   };
 };
 module.exports = requestLog;
