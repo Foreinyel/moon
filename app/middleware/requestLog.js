@@ -1,7 +1,7 @@
 "use strict";
 
 const uuid = require("uuid");
-const requestLog = () => {
+const requestLog = (options, app) => {
   return async (ctx, next) => {
     const start = Date.now();
     const traceId = ctx.request.header.traceId || uuid.v4();
@@ -23,7 +23,11 @@ const requestLog = () => {
     ctx.set("traceId", traceId);
     const cost = Date.now() - start;
     if (ctx.statsd) {
-      ctx.statsd.timing("api", responseTime, function (error, bytes) {});
+      ctx.statsd.timing(
+        `${app.config.appName}_${ctx.routerPath}`,
+        cost,
+        function (error, bytes) {}
+      );
     }
     ctx.set("X-Response-Time", cost);
   };

@@ -1,6 +1,7 @@
 "use strict";
 
 const { LogstashTransport } = require("./LogstashTransport");
+const assert = require("assert");
 
 module.exports = class AppBootHook {
   constructor(app) {
@@ -8,6 +9,7 @@ module.exports = class AppBootHook {
   }
 
   configWillLoad() {
+    assert(this.app.config.appName, `appName required.`);
     this.app.logger.info("configWillLoad");
     // 此时 config 文件已经被读取并合并，但是还并未生效
     // 这是应用层修改配置的最后时机
