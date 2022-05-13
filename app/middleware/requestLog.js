@@ -22,6 +22,9 @@ const requestLog = () => {
     await next();
     ctx.set("traceId", traceId);
     const cost = Date.now() - start;
+    if (ctx.statsd) {
+      ctx.statsd.timing("api", responseTime, function (error, bytes) {});
+    }
     ctx.set("X-Response-Time", cost);
   };
 };
