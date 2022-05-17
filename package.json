@@ -1,6 +1,6 @@
 {
   "name": "@hemyn/moon",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "",
   "dependencies": {
     "@hemyn/egg-rabbitmq": "^1.0.3",
