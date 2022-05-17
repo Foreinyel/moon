@@ -243,10 +243,10 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@hemyn/egg-rabbitmq@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@hemyn/egg-rabbitmq/-/egg-rabbitmq-1.0.2.tgz#ae35ca039caa55c2a5128ca66963f2efecc0e0ed"
-  integrity sha512-rHIB7Tu4ZTZHUkVV6/Bt5iW7G5jhapAX91g2LpOpsGmBylBGRF8oLzrAlGOj1kstQM8sG2UjoMQYngKCqZJ12Q==
+"@hemyn/egg-rabbitmq@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@hemyn/egg-rabbitmq/-/egg-rabbitmq-1.0.3.tgz#8cc7de544d5b11d1e8b740caf41aae1048875b78"
+  integrity sha512-Esu3Z675vxbLfLelUf+lBtqhuX+UW/zoUfic0OHeb8DnMaZRA3SY8kuocin/CV3SbmsAm0m5oyI0QA1mIlKp4w==
   dependencies:
     "@hemyn/utils-node" "^0.2.1"
     amqplib "^0.9.0"
