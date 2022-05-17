@@ -24,7 +24,7 @@ const requestLog = (options, app) => {
     const cost = Date.now() - start;
     if (ctx.statsd) {
       ctx.statsd.timing(
-        `${app.config.appName}_${ctx.routerPath}`,
+        `${app.config.appName}`,
         cost,
         function (error, bytes) {}
       );
