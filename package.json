@@ -1,10 +1,10 @@
 {
   "name": "@hemyn/moon",
-  "version": "0.0.19",
+  "version": "0.0.20",
   "description": "",
   "dependencies": {
     "@hemyn/egg-rabbitmq": "^1.0.4",
-    "@hemyn/egg-rpc": "^0.0.4",
+    "@hemyn/egg-rpc": "^0.0.5",
     "@hemyn/egg-rpc-generator": "^0.0.2",
     "@hemyn/moon-kafka": "^1.0.4",
     "@hemyn/moon-statsd": "^1.0.1",
